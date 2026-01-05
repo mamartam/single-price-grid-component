@@ -1,7 +1,7 @@
 ## Single price grid component
 This project was created based on a Frontend Mentor [https://www.frontendmentor.io/] challenge. The layout and design idea come from Frontend Mentor, while the code implementation is my own.
 
-📦 Technologies
+## 📦 Technologies
 - HTML5 — semantic markup for clear and accessible structure
 - CSS3 — styling and layout
 - CSS Grid — main layout structure
