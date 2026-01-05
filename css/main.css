@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+}
+/* ================== */
+.card {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 10px 50px -15px hsl(179, 62%, 43%);
+  overflow: hidden;
+}
+.card-section {
+  padding: 35px;
+}
+/* ================== */
+.card__about {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.card__about--header {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.card__about--details {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.card__about--description {
+  color: hsl(218, 22%, 67%);
+  line-height: 25px;
+  font-weight: 400;
+}
+/* ================== */
+.card__subscription {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-direction: column;
+}
+.card__subscription--header {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card__subscription--tariff {
+  margin-bottom: 10px;
+  font-size: 14px;
+
+  color: hsl(179, 53%, 67%);
+}
+.card__subscription--tariff-amount {
+  font-size: 30px;
+  vertical-align: middle;
+  font-weight: 700;
+  margin-right: 10px;
+  color: hsl(204, 43%, 93%);
+}
+.card__subscription--details {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.card__subscription--signup-btn {
+  width: 100%;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 10px 50px -20px hsl(217, 13%, 57%);
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  transition: transform linear 0.3s, box-shadow linear 0.3s;
+}
+.card__subscription--signup-btn:hover {
+  box-shadow: 0 10px 50px -10px hsl(217, 8%, 47%);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+/* ================== */
+.card__advantages {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: hsl(179, 66%, 45%);
+}
+.card__advantages--header {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card__advantages--list {
+  color: hsl(204, 43%, 93%);
+}
+.card__advantages--list li {
+  list-style-type: none;
+  font-size: 14px;
+  color: hsl(178, 71%, 80%);
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  .card {
+    max-width: 90%;
+    min-width: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+  .card__about {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .card__subscription {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .card__advantages {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
