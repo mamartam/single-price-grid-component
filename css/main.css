@@ -24,6 +24,8 @@ body {
   border-radius: 7px;
   box-shadow: 0 10px 50px -15px hsl(179, 62%, 43%);
   overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .card-section {
   padding: 35px;
@@ -141,3 +143,4 @@ body {
     grid-row: 3/4;
   }
 }
+
