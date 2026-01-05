@@ -27,7 +27,7 @@ Once the layout was complete and responsive, I finalized the styles and publishe
 - How to approach a layout by starting with `mobile-first` design
 - The importance of stepping back to learn core concepts when something is unclear, instead of forcing a solution
 
-🚀 How It Can Be Improved?
+## 🚀 How It Can Be Improved?
 - Add more accessibility improvements, such as better color contrast, focus states
 - Improve reusability of styles by introducing CSS variables for colors, spacing, and font sizes
 - Refactor the layout to reduce repetition in Grid positioning and make the CSS more scalable
